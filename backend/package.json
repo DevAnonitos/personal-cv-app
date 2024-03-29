@@ -8,7 +8,7 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nguyen Duc Gia Bao (DevAnonitos)",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.17",
