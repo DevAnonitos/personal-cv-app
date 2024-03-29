@@ -1,13 +1,16 @@
 import express, { Express, Request, Response } from "express";
+import cors from "cors";
+
 
 // Initialized Server
 const app: Express = express();
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
+app.use(cors()); 
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello API");
+  res.json({ message: "Hello API" });
 });
 
 app.listen(port, () => {
