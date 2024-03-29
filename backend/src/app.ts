@@ -1,18 +1,16 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 
-
-// Initialized Server
+// Initialized configuration
 const app: Express = express();
-const port = process.env.PORT || 4000;
 
+// use configuration
 app.use(express.json());
 app.use(cors()); 
 
+// Handle Logic
 app.get("/", (req: Request, res: Response) => {
   res.json({ message: "Hello API" });
 });
 
-app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
-})
+export default app;
