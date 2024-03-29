@@ -20,12 +20,22 @@ const crawlData = async () => {
     const $ = cheerio.load(res.data);
     crawledData = $(".wpb_wrapper").text();
     console.log("Data crawled successfully:", crawledData);
+    
+    console.log("################################################################")
+    console.log("Crawl event logged at:", new Date());
+    console.log("################################################################") 
+    
   } catch (error: any) {
     console.error("Error occurred while crawling data:", error);
   }
 };
 
-cron.schedule("* * * * *", crawlData);
+cron.schedule("* * * * *", () => {
+  console.log("################################################################")
+  console.log("Crawl event logged at:", new Date());
+  console.log("################################################################")
+  crawlData();
+} );
 
 app.get("/api/v1/data", (req: Request, res: Response) => {
   res.json({ data: crawledData });
