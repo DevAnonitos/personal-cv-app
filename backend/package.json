@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Build api for my personal project to cv",
   "main": "src/server.ts",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
