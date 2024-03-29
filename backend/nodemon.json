@@ -1,0 +1,19 @@
+{
+  "watch": ["src"],
+  "ext": ".ts,.js",
+  "exec": "ts-node ./src/index.ts",
+  "verbose": true,
+  "legacy-watch": true,
+  "ignore": ["node_modules", "dist"],
+  "restartable": "rs",
+  "timestamp": "YYYY-MM-DD HH:mm:ss",
+  "colors": true,
+  "signal": "SIGINT",
+  "restartDelay": 1000,
+  "eslintConfig": {
+      "rules": {
+          "semi": ["error", "always"],
+          "quotes": ["error", "double"]
+      }
+  }
+}
