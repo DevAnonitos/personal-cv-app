@@ -13,6 +13,9 @@ app.use(cors());
 
 // Crawler configuration
 let crawledData: string = "";
+let crawlCount: number = 0;
+const maxCrawlCount: number = 5; 
+const crawlInterval: number = 24 * 60 * 60 * 1000;
 
 const crawlData = async () => {
   try {
@@ -20,20 +23,24 @@ const crawlData = async () => {
     const $ = cheerio.load(res.data);
     crawledData = $(".wpb_wrapper").text();
     console.log("Data crawled successfully:", crawledData);
+    crawlCount++;
+
+    if(crawlCount > maxCrawlCount) {
+      console.log("Crawl completed");
+
+    }
     
-    console.log("################################################################")
     console.log("Crawl event logged at:", new Date());
-    console.log("################################################################") 
     
   } catch (error: any) {
     console.error("Error occurred while crawling data:", error);
   }
 };
 
+// const crawlTask = cron.schedule("0 0 */1 * *", crawlData, { scheduled: false });
+// crawlTask.start();
 cron.schedule("* * * * *", () => {
-  console.log("################################################################")
   console.log("Crawl event logged at:", new Date());
-  console.log("################################################################")
   crawlData();
 } );
 
