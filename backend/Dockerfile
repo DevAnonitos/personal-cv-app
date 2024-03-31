@@ -1,4 +1,4 @@
-FROM node:20-alpine3.18
+FROM node:20-alpine
 
 RUN add group app && adduser -S -G app app
 
