@@ -2,6 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Build api for my personal project to cv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NguyenBao23131/personal-cv-app.git"
+    
+  },
   "main": "src/server.ts",
   "scripts": {
     "start": "nodemon",
@@ -9,7 +14,7 @@
   },
   "keywords": [],
   "author": "Nguyen Duc Gia Bao (DevAnonitos)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/cheerio": "^0.22.35",
     "@types/cors": "^2.8.17",
