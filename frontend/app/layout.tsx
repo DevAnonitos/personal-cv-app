@@ -5,7 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  generator: "Next.js",
+  applicationName: "PortfolioAppCV",
   title: "DevAnonitos Portfolio",
+  keywords: ['Next.js', 'React', 'TypeScript'],
   description: "Build a project profile to CV",
 };
 
