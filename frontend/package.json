@@ -6,6 +6,7 @@
   "author": {
     "name": "NguyenDucGiaBao (DevAnonitos)"
   },
+  "keywords": ["Next.js", "React.js", "Typescript"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
