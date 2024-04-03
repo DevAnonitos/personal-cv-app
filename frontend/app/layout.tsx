@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "DevAnonitos Portfolio",
   keywords: ['Next.js', 'React', 'TypeScript'],
   description: "Build a project profile to CV",
+  category: "Development",
+  creator: "DevAnonitos",
+  authors: [{ name: "BaoNguyen" }]
 };
 
 export default function RootLayout({
