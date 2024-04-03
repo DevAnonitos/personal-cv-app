@@ -2,7 +2,7 @@ import React from 'react';
 
 const LeftSideBar = () => {
   return (
-    <div>LeftSideBar</div>
+    <div className='bg-gray-300'>LeftSideBar</div>
   );
 };
 
