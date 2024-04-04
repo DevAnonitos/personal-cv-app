@@ -112,4 +112,5 @@
   .bottomBar {
     @apply flex items-center bg-white w-full border-t-[1px];
   }
+  
 }

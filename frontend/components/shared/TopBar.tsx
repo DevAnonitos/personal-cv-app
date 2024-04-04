@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import SearchBar from './SearchBar';
 
 const TopBar = () => {
   return (
@@ -20,8 +21,8 @@ const TopBar = () => {
 
         </Link>
 
-        <div>
-          Search
+        <div className='flex items-center justify-center'>
+          <SearchBar />
         </div>
 
         <div>
