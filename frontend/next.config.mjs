@@ -11,7 +11,11 @@ const nextConfig = {
     fetches: {
       fullUrl: true,
     }
-  }
+  },
+  devIndicators: {
+    buildActivityPosition: "bottom-right",
+  },
+  trailingSlash: true,
 };
 
 export default nextConfig;
