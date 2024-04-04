@@ -26,9 +26,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        <main className="flex flex-row">
+        <main className="flex flex-row h-screen">
           <LeftSideBar />
-          {children}
+          <div className="flex-grow overflow-y-auto">
+            {children}
+          </div>
         </main>
       </body>
     </html>
