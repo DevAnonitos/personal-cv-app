@@ -30,7 +30,7 @@ export default function RootLayout({
         <main className="flex flex-col h-full">
           <LeftSideBar />
           <section className="main-container">
-            <div>
+            <div className="max-w-screen-2xl w-full mx-auto">
               {children}
             </div>
           </section>
