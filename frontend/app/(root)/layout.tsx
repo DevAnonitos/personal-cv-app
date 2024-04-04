@@ -27,13 +27,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        <main className="flex flex-col">
+        <main className="flex flex-col h-full">
           <LeftSideBar />
-            <div className="pt-16 lg:pl-64 flex w-full">
+          <section className="main-container">
+            <div>
               {children}
             </div>
+          </section>
+          <BottomBar />
         </main>
-        <BottomBar />
       </body>
     </html>
   );
