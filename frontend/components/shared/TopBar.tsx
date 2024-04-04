@@ -10,7 +10,7 @@ const TopBar = () => {
       <div className='flex items-center justify-between gap-x-4 p-4 w-full h-full '>
         <Link href="/" className='flex gap-2 items-center justify-center'>
           <Image 
-            src="/assets/images/Logo.jpg"
+            src="/assets/images/logoAvt.png"
             alt='logo'
             width={40}
             height={40}
