@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../../styles/globals.css"
 import { TopBar, LeftSideBar, BottomBar } from "@/components/shared";
+import { Fragment } from 'react';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,13 +27,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        <main className="flex flex-row">
+        <main className="flex flex-col">
           <LeftSideBar />
-          <section className="main-container bg-slate-500">
-            <div className="w-full flex max-w-4xl">
+            <div className="pt-16 lg:pl-64 flex w-full">
               {children}
             </div>
-          </section>
         </main>
         <BottomBar />
       </body>
