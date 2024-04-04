@@ -74,3 +74,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .main-container {
+    @apply flex min-h-screen w-full flex-col items-center px-6 pb-10 pt-28 max-md:pb-32 sm:px-10
+  }
+
+}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../../styles/globals.css"
-import { TopBar, LeftSideBar } from "@/components/shared";
+import { TopBar, LeftSideBar, BottomBar } from "@/components/shared";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,12 +26,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        <main className="flex flex-row h-screen">
+        <main className="flex flex-row">
           <LeftSideBar />
-          <div className="flex-grow overflow-y-auto">
-            {children}
-          </div>
+          <section className="main-container bg-slate-500">
+            <div className="w-full flex max-w-4xl">
+              {children}
+            </div>
+          </section>
         </main>
+        <BottomBar />
       </body>
     </html>
   );
