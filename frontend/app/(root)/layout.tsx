@@ -1,8 +1,9 @@
+import React from 'react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../../styles/globals.css"
+import ThemeProvider from './provider';
 import { TopBar, LeftSideBar, BottomBar } from "@/components/shared";
-import { Fragment } from 'react';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,16 +27,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopBar />
-        <main className="flex flex-col h-full">
-          <LeftSideBar />
-          <section className="main-container">
-            <div className="max-w-screen-2xl w-full mx-auto">
-              {children}
-            </div>
-            <BottomBar />
-          </section>
-        </main>
+        <ThemeProvider>
+          <TopBar />
+          <main className="flex flex-col h-full">
+            <LeftSideBar />
+            <section className="main-container">
+              <div className="max-w-screen-2xl w-full mx-auto">
+                {children}
+              </div>
+              <BottomBar />
+            </section>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
