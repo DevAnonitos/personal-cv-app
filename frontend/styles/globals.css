@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #09090a;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #697C89;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #617C79;
+  cursor: pointer;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -77,7 +98,7 @@
 
 @layer components {
   .main-container {
-    @apply pt-16 lg:pl-64 flex items-center flex-col w-full;
+    @apply mt-16 lg:pl-64 flex items-center flex-col w-full;
   }
 
   .topBar {
@@ -85,7 +106,7 @@
   }
 
   .leftSideBar {
-    @apply bg-gray-300 fixed h-full pt-16 overflow-y-auto w-64;
+    @apply bg-gray-300 left-0 top-0 z-20 w-64 mt-16 h-screen fixed flex-col justify-between overflow-auto max-md:hidden;
   }
 
   .bottomBar {
