@@ -10,13 +10,14 @@ const TopBar = () => {
       <div className='flex items-center justify-between gap-x-4 p-4 w-full h-full '>
         <Link href="/" className='flex gap-2 items-center justify-center'>
           <Image 
-            src="./assets/images/logo.svg"
+            src="/assets/images/Logo.jpg"
             alt='logo'
             width={40}
             height={40}
-            className='object-contain'
+            className='object-contain rounded-full'
           />
           <p>DevAnonitos</p>
+
         </Link>
 
         <div>
