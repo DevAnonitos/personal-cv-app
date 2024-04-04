@@ -33,8 +33,8 @@ export default function RootLayout({
             <div className="max-w-screen-2xl w-full mx-auto">
               {children}
             </div>
+            <BottomBar />
           </section>
-          <BottomBar />
         </main>
       </body>
     </html>
