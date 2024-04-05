@@ -23,3 +23,18 @@ export const socialMediaLinks = [
     label: "Tiktok",
   },
 ];
+
+export const linkReferences = [
+  {
+    label: "Blog"
+  },
+  {
+    label: "Resources",
+  },
+  {
+    label: "Tools",
+  },
+  {
+    label: "Contact",
+  },
+];
