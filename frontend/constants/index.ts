@@ -8,18 +8,18 @@ export const bottomBarLinks = [
 
 export const socialMediaLinks = [
   {
-    imgUrl: "/assets/icons/facebook.svg",
-    linkUrl: "",
+    imgUrl: "/assets/facebook.svg",
+    linkUrl: "https://www.facebook.com/baonguyenno1412/",
     label: "Facebook",
   },
   {
-    imgUrl: "/assets/icons/instagram.svg",
-    linkUrl: "",
+    imgUrl: "/assets/instagram.svg",
+    linkUrl: "https://www.instagram.com/devanonitos/",
     label: "Instagram",
   },
   {
-    imgUrl: "/assets/icons/tiktok.svg",
-    linkUrl: "",
+    imgUrl: "/assets/tiktok.svg",
+    linkUrl: "https://www.tiktok.com/@devanonitos",
     label: "Tiktok",
   },
 ];

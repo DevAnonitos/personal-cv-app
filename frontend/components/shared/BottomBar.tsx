@@ -1,10 +1,12 @@
 import React from 'react';
 import { socialMediaLinks } from '@/constants';
+import Image from 'next/image';
+import { Button } from '../ui/button';
 
 const BottomBar = () => {
   return (
     <div className='bottomBar'>
-      <div className='flex bg-gray-300 justify-between w-full'>
+      <div className='flex justify-between w-full'>
         {/* Des Creator */}
         <div className='flex flex-col'>
           <h1>
@@ -19,8 +21,20 @@ const BottomBar = () => {
           Link Reference
         </div>
         {/* Link social Media */}
-        <div>
-          Social Media
+        <div className='flex flex-row items-center justify-center max-md:hidden'>
+          {socialMediaLinks.map((link) => (
+            <Button variant="secondary" key={link.label} className='button_social'>
+              <a href={link.linkUrl} target='_blank'>
+                <Image
+                  src={link.imgUrl}
+                  width={25}
+                  height={25}
+                  alt='Social Media'
+                  className='object-contain'
+                />
+              </a>
+            </Button>
+          ))}
         </div>
       </div>
     </div>
