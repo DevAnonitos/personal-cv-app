@@ -14,6 +14,11 @@ export const leftSideBarLinks = [
     route: "/blog",
     label: "Blog",
   },
+  {
+    imgUrl: "/assets/facebook.svg",
+    route: "/channel",
+    label: "Channel",
+  },
 ];
 
 export const socialMediaLinks = [
