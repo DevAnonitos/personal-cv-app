@@ -1,6 +1,11 @@
 export const leftSideBarLinks = [
   {
     imgUrl: "/assets/facebook.svg",
+    route: "/",
+    label: "Home",
+  },
+  {
+    imgUrl: "/assets/facebook.svg",
     route: "/about",
     label: "About",
   },
