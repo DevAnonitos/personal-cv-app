@@ -17,7 +17,7 @@ const TopBar = () => {
             height={40}
             className='object-contain rounded-full'
           />
-          <p>DevAnonitos</p>
+          <p className='logo_text'>DevAnonitos</p>
 
         </Link>
 

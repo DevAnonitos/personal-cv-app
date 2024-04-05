@@ -110,7 +110,14 @@
   }
 
   .bottomBar {
-    @apply flex items-center bg-white w-full border-t-[1px] border-slate-300;
+    @apply flex items-center bg-white w-full border-t-[1px] border-slate-300 p-6;
   }
   
 }
+
+/* Config style */
+.logo_text {
+  @apply max-sm:hidden font-semibold text-lg text-black tracking-wide;
+}
+
+/* Config Shacdn Components */
