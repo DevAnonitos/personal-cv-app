@@ -18,9 +18,14 @@ export const socialMediaLinks = [
     label: "Instagram",
   },
   {
-    imgUrl: "/assets/tiktok.svg",
-    linkUrl: "https://www.tiktok.com/@devanonitos",
-    label: "Tiktok",
+    imgUrl: "/assets/github.svg",
+    linkUrl: "https://github.com/NguyenBao23131",
+    label: "Github",
+  },
+  {
+    imgUrl: "/assets/linkedin.svg",
+    linkUrl: "",
+    label: "LinkedIn",
   },
 ];
 
@@ -34,7 +39,11 @@ export const linkReferences = [
   {
     label: "Tools",
   },
+  
   {
     label: "Contact",
+  },
+  {
+    label: "Teams",
   },
 ];
