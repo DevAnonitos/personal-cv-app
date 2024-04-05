@@ -1,9 +1,14 @@
 export const leftSideBarLinks = [
-
-];
-
-export const bottomBarLinks = [
-  
+  {
+    imgUrl: "/assets/facebook.svg",
+    route: "/about",
+    label: "About",
+  },
+  {
+    imgUrl: "/assets/facebook.svg",
+    route: "/blog",
+    label: "Blog",
+  },
 ];
 
 export const socialMediaLinks = [
@@ -24,7 +29,7 @@ export const socialMediaLinks = [
   },
   {
     imgUrl: "/assets/linkedin.svg",
-    linkUrl: "",
+    linkUrl: "www.linkedin.com/in/bảo-nguyễn-đức-gia-68284a270",
     label: "LinkedIn",
   },
 ];
