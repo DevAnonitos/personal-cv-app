@@ -8,7 +8,7 @@ import SearchBar from './SearchBar';
 const TopBar = () => {
   return (
     <nav className='topBar'>
-      <div className='flex items-center justify-between gap-x-4 p-4 w-full h-full '>
+      <div className='flex items-center justify-between gap-x-4 p-4 w-full h-full max-md:p-6'>
         <Link href="/" className='flex gap-2 items-center justify-center'>
           <Image 
             src="/assets/images/logoAvt.png"

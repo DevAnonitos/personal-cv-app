@@ -102,15 +102,15 @@
   }
 
   .topBar {
-    @apply fixed w-full h-16 z-50 top-0 left-0 bg-white border-b-[1px];
+    @apply fixed w-full h-16 z-50 top-0 left-0 bg-white border-b-[1px] border-slate-300;
   }
 
   .leftSideBar {
-    @apply bg-white left-0 top-0 z-20 w-64 mt-16 h-screen fixed flex-col justify-between overflow-auto max-md:hidden border-r-[1px];
+    @apply bg-white left-0 top-0 z-20 w-64 mt-16 h-screen fixed flex-col justify-between overflow-auto max-md:hidden border-r-[1px] border-slate-300;
   }
 
   .bottomBar {
-    @apply flex items-center bg-white w-full border-t-[1px];
+    @apply flex items-center bg-white w-full border-t-[1px] border-slate-300;
   }
   
 }
