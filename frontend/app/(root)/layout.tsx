@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../../styles/globals.css"
 import ThemeProvider from './provider';
+import { Toaster } from '@/components/ui/toaster';
 import { TopBar, LeftSideBar, BottomBar } from "@/components/shared";
 
 
@@ -37,6 +38,7 @@ export default function RootLayout({
               </div>
               <BottomBar />
             </section>
+            <Toaster />
           </main>
         </ThemeProvider>
       </body>
