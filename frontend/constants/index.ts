@@ -1,21 +1,36 @@
 export const leftSideBarLinks = [
   {
-    imgUrl: "/assets/facebook.svg",
+    imgUrl: "/assets/icons/home.svg",
     route: "/",
     label: "Home",
   },
   {
-    imgUrl: "/assets/facebook.svg",
-    route: "/about",
+    imgUrl: "/assets/icons/profile.svg",
+    route: "/about-me",
     label: "About",
   },
   {
-    imgUrl: "/assets/facebook.svg",
+    imgUrl: "/assets/icons/project.svg",
+    route: "/project",
+    label: "Project",
+  },
+  {
+    imgUrl: "/assets/icons/blog.svg",
     route: "/blog",
     label: "Blog",
   },
   {
-    imgUrl: "/assets/facebook.svg",
+    imgUrl: "/assets/icons/tool.svg",
+    route: "/tools",
+    label: "Tools",
+  },
+  {
+    imgUrl: "/assets/icons/resource.svg",
+    route: "/resources",
+    label: "Resources",
+  },
+  {
+    imgUrl: "/assets/icons/channel.svg",
     route: "/channel",
     label: "Channel",
   },
