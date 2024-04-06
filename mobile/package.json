@@ -25,12 +25,15 @@
     "expo-system-ui": "~2.9.3",
     "expo-web-browser": "~12.8.2",
     "firebase": "^10.10.0",
+    "nativewind": "^4.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.6",
+    "react-native-reanimated": "^3.8.1",
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
