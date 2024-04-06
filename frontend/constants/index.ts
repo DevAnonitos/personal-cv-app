@@ -11,13 +11,18 @@ export const leftSideBarLinks = [
   },
   {
     imgUrl: "/assets/icons/project.svg",
-    route: "/project",
+    route: "/projects",
     label: "Project",
   },
   {
     imgUrl: "/assets/icons/blog.svg",
     route: "/blog",
     label: "Blog",
+  },
+  {
+    imgUrl: "/assets/icons/paper.svg",
+    route: "/papers",
+    label: "Paper",
   },
   {
     imgUrl: "/assets/icons/tool.svg",
@@ -31,7 +36,7 @@ export const leftSideBarLinks = [
   },
   {
     imgUrl: "/assets/icons/channel.svg",
-    route: "/channel",
+    route: "/channels",
     label: "Channel",
   },
 ];
