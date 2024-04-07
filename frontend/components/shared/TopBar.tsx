@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SearchBar from './SearchBar';
+import SwitchThemes from './SwitchThemes';
 
 const TopBar = () => {
   return (
@@ -26,6 +27,7 @@ const TopBar = () => {
         </div>
 
         <div>
+          {/* <SwitchThemes /> */}
           profile
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider>
+        <ThemeProvider attribute='class' defaultTheme='system'>
           <TopBar />
           <main className="flex flex-col h-full">
             <LeftSideBar />
