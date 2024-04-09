@@ -116,6 +116,10 @@
   .bottomBar {
     @apply flex items-center bg-white w-full border-t-[1px] border-slate-300 p-6;
   }
+
+  .sign-in_dialog {
+    @apply border bg-card text-card-foreground w-full rounded-xl shadow-lg border-none p-9 flex flex-col items-start justify-center;
+  }
 }
 
 @layer utilities {

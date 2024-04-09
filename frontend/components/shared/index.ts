@@ -3,6 +3,7 @@ import TopBar from "./TopBar";
 import BottomBar from "./BottomBar";
 import SearchBar from "./SearchBar";
 import SwitchThemes from "./SwitchThemes";
+import SignDialogButton from "./SignInDialogButton";
 
 export {
   LeftSideBar,
@@ -10,4 +11,5 @@ export {
   BottomBar,
   SearchBar,
   SwitchThemes,
+  SignDialogButton,
 };

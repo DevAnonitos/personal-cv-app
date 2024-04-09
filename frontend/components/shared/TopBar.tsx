@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SearchBar from './SearchBar';
 import SwitchThemes from './SwitchThemes';
+import SignDialogButton from './SignInDialogButton';
 
 const TopBar = () => {
   return (
@@ -28,7 +29,7 @@ const TopBar = () => {
 
         <div>
           {/* <SwitchThemes /> */}
-          profile
+          <SignDialogButton />
         </div>
       </div>
     </nav>
