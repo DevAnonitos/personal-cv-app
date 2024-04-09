@@ -32,7 +32,7 @@ const LeftSideBar = () => {
                 height={38}
                 className='object-contain rounded-full bg-gray-200 p-2'
               />
-              <p className='text-md font-normal'>
+              <p className={`text-md font-normal ${isActive ? "text-black font-semibold" : "text-slate-600"}`}>
                 {link.label}
               </p>
             </Link>
