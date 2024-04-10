@@ -2,7 +2,9 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div>ResourcePage</div>
+    <section className='container_page'>
+      ResourcePage
+    </section>
   );
 };
 

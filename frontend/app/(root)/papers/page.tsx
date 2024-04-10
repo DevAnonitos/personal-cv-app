@@ -2,7 +2,9 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div>Page</div>
+    <section className='container_page'>
+      PaperPage
+    </section>
   );
 };
 

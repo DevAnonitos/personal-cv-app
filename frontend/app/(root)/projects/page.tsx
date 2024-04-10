@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Page = () => {
   return (
-    <div>ProjectPage</div>
-  )
-}
+    <section className='container_page'>
+      ProjectPage
+    </section>
+  );
+};
 
 export default Page;

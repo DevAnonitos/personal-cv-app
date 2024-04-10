@@ -105,6 +105,10 @@
     @apply max-w-screen-2xl min-h-screen h-full w-full mx-auto;
   }
 
+  .container_page {
+    @apply flex flex-col w-full h-full p-6 space-y-4;
+  }
+
   .topBar {
     @apply fixed w-full h-16 z-50 top-0 left-0 bg-white border-b-[1px] border-slate-300;
   }
