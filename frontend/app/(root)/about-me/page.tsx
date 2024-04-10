@@ -12,7 +12,7 @@ const Page = () => {
           width={150}
           height={150}
           alt='Loading'
-          className='object-contain absolute t-[50px]'
+          className='object-contain'
         />
       </div>
         
