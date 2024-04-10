@@ -124,6 +124,10 @@
   .sign-in_dialog {
     @apply border bg-card text-card-foreground w-full rounded-xl shadow-lg border-none p-9 flex flex-col items-start justify-center;
   }
+
+  .bannerAboutMeImage {
+    @apply block bg-slate-200 h-[400px] rounded-2xl shadow-sm;
+  }
 }
 
 @layer utilities {
