@@ -6,13 +6,14 @@ const Page = () => {
     <section className='container_page'>
       {/* Banner AboutMe */}
       <div className='bannerAboutMeImage'>
-        {/* Image Thumb Cover */}
         <Image
-          src={"/assets/facebook.svg"}
+          src={"/assets/images/logo.jpg"}
           width={150}
           height={150}
           alt='Loading'
-          className='object-contain'
+          loading='lazy'
+          className='object-contain rounded-full border 
+          border-slate-600 max-md:w-[120px] max-md:h-[120px]'
         />
       </div>
         
