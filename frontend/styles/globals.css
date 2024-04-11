@@ -126,7 +126,7 @@
   }
 
   .bannerAboutMeImage {
-    @apply flex relative w-full items-end justify-center bg-slate-200 h-[400px] rounded-2xl shadow-sm max-md:h-[300px];
+    @apply flex relative w-full items-end justify-center bg-slate-200 h-[400px] rounded-2xl shadow-sm max-md:h-[300px] bg-gradient-to-r from-slate-500 to-blue-900;
   }
 }
 
