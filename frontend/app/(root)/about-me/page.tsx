@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from "next/image";
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const Page = () => {
   return (
@@ -29,12 +31,15 @@ const Page = () => {
               alt='Study'
               width={350}
               height={350}
-              className='object-contain max-md:w-[150px] max-md:h-[150px]'
+              className='object-contain max-md:w-[185px] max-md:h-[185px]'
             />
             {/* Social Icons */}
           </div>
-          <div className='w-1/2 max-md:w-full bg-blue-500'>
+          <div className='w-1/2 max-md:w-full border border-slate-300 rounded-xl'>
             h2
+            <p>
+
+            </p>
           </div>
         </div>
       </div>
