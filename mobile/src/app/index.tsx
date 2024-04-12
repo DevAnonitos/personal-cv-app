@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
 import { Link, Redirect } from 'expo-router';
 
-const index = () => {
+const Welcome = () => {
   return (
     <View>
 
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Welcome;
