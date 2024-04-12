@@ -14,7 +14,7 @@ const Welcome = () => {
         }}
       >
         <View>
-          
+          V
         </View>
       </ScrollView>
     </SafeAreaView>
