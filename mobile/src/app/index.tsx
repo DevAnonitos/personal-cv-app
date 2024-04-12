@@ -14,7 +14,7 @@ const Welcome = () => {
         }}
       >
         <View>
-          V
+          <Text>Open up App.js to start working on your app!</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
