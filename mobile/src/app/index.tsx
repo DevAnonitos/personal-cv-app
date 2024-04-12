@@ -5,7 +5,7 @@ import { Link, Redirect } from 'expo-router';
 const Welcome = () => {
   return (
     <View>
-
+      
     </View>
   );
 };
