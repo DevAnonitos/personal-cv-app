@@ -1,12 +1,23 @@
 import React from 'react';
-import { View, Text, ActivityIndicator } from 'react-native';
-import { Link, Redirect } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { Link, Redirect, router } from 'expo-router';
+import { View, Text, ScrollView, Image } from 'react-native';
+
 
 const Welcome = () => {
   return (
-    <View>
-      
-    </View>
+    <SafeAreaView>
+      <ScrollView
+        contentContainerStyle={{
+          height: "100%",
+        }}
+      >
+        <View>
+          
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
