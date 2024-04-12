@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { socialLinks } from '@/constants';
 
 const Page = () => {
   return (
@@ -31,9 +32,9 @@ const Page = () => {
               alt='Study'
               width={350}
               height={350}
+              unoptimized
               className='object-contain max-md:w-[185px] max-md:h-[185px]'
             />
-            {/* Social Icons */}
           </div>
           <div className='w-1/2 max-md:w-full border border-slate-300 rounded-xl'>
             h2

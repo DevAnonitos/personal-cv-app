@@ -82,3 +82,26 @@ export const linkReferences = [
     label: "Teams",
   },
 ];
+
+export const socialLinks = [
+  {
+    imgUrl: "/facebook.svg",
+    linkUrl: "https://www.facebook.com/baonguyenno1412/",
+    label: "Facebook",
+  },
+  {
+    imgUrl: "/instagram.svg",
+    linkUrl: "https://www.instagram.com/devanonitos/",
+    label: "Instagram",
+  },
+  {
+    imgUrl: "/assets/github.svg",
+    linkUrl: "https://github.com/NguyenBao23131",
+    label: "Github",
+  },
+  {
+    imgUrl: "/assets/linkedin.svg",
+    linkUrl: "www.linkedin.com/in/bảo-nguyễn-đức-gia-68284a270",
+    label: "LinkedIn",
+  },
+];
