@@ -5,6 +5,7 @@ import { useFonts } from 'expo-font';
 import { Stack, SplashScreen } from 'expo-router';
 
 import "react-native-url-polyfill";
+import "../styles/global.css";
 
 import { useColorScheme } from '@/src/components/useColorScheme';
 
