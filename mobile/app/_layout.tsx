@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Stack, SplashScreen } from 'expo-router';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 
@@ -9,12 +8,6 @@ import "react-native-url-polyfill";
 import { useColorScheme } from '@/components/useColorScheme';
 
 SplashScreen.preventAutoHideAsync();
-
-export { ErrorBoundary } from 'expo-router';
-
-export const unstable_settings = {
-  initialRouteName: '(tabs)',
-};
 
 const RootLayout = () => {
   const [fontsLoaded, error] = useFonts({
@@ -31,19 +24,17 @@ const RootLayout = () => {
 
   useEffect(() => {
     if (error) throw error;
-  }, [error]);
 
-  useEffect(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
     }
-  }, [fontsLoaded]);
+  }, [fontsLoaded, error]);
 
   if (!fontsLoaded) {
     return null;
   }
 
-  if(!fontsLoaded && !error) {
+  if (!fontsLoaded && !error) {
     return null;
   }
 

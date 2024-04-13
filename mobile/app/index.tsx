@@ -7,7 +7,6 @@ import { StatusBar } from 'expo-status-bar';
 const WelCome = () => {
   return (
     <SafeAreaView className='bg-primary h-full'>
-
       <ScrollView 
         contentContainerStyle={{
           height: "100%"
