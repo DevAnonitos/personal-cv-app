@@ -1,11 +1,22 @@
-import React from 'react'
-import { View, Text } from 'react-native';
+import React from 'react';
+import { router, Redirect } from 'expo-router';
+import { View, Text, Image, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const WelCome = () => {
   return (
-    <View className='bg-blue-500'>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaView className='bg-primary h-full'>
+
+      <ScrollView 
+        contentContainerStyle={{
+          height: "100%"
+        }}
+      >
+        <View className=''>
+          <Text>Open up App.js to start working on your app!</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
