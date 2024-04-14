@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Stack, SplashScreen } from 'expo-router';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-
 import "react-native-url-polyfill";
 
 import { useColorScheme } from '@/components/useColorScheme';

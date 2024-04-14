@@ -16,7 +16,7 @@ const WelCome = () => {
       >
         <View className='w-full flex justify-center items-center h-full px-4'>
           <Text className='text-white text-3xl'>
-            DevHub
+            DevHubApp
           </Text>
         </View>
       </ScrollView>
