@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { router, Redirect, Link } from 'expo-router';
-import { View, Text, Image, ScrollView } from 'react-native';
+import { View, Text, Image, ScrollView, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { images } from '@/constants';
@@ -15,8 +15,25 @@ const WelCome = () => {
         }}
       >
         <View className='w-full flex justify-center items-center h-full px-4'>
-          <Text className='text-white text-3xl'>
-            DevHubApp
+          <Text className='text-4xl font-bold text-secondary-200'>
+            DevHub
+          </Text>
+          <Image
+            source={images.cards}
+            className='max-w-[380px] w-full h-[298px]'
+            resizeMode='contain'
+          />
+          <View className='relative mt-5'>
+            <Text className='text-3xl text-white font-bold text-center'>
+              Discover Endless{"\n"}
+              Possibilities with{" "}
+              <Text className="text-secondary-200">DevHub</Text>
+            </Text>
+          </View>
+
+          <Text className='text-sm font-pregular mt-5 text-gray-100 text-center'>
+            Where Creativity Meets Innovation: Embark on a Journey of Limitless
+            Exploration with DevHub
           </Text>
         </View>
       </ScrollView>
