@@ -15,6 +15,7 @@ const WelCome = () => {
           height: "100%"
         }}
       >
+        {/*==================== Slider Screen============================= */}
         <View className='w-full flex justify-center items-center h-full px-4'>
           <Text className='text-4xl font-bold text-secondary-200'>
             DevHub
@@ -36,7 +37,12 @@ const WelCome = () => {
             Where Creativity Community: Sharing your ideas with developers & contributors
             Exploration with DevHub
           </Text>
-          <CustomButton />
+          {/*==================== Slider Screen============================= */}
+          <CustomButton
+            title='Continue with Email'
+            handlePress={() => router.push('/sign-in')}
+            containerStyle='w-full mt-7'
+          />
         </View>
       </ScrollView>
       <StatusBar backgroundColor="#161622" style="light" />
