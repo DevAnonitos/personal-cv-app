@@ -3,11 +3,15 @@ import { Link, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, ScrollView, Dimensions, Alert, Image } from 'react-native';
 
-import { CustomButton } from '@/components';
+import { CustomButton, FormField } from '@/components';
 
 const SignIn = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  })
 
   const handleSubmit = async () => {
 
@@ -28,6 +32,22 @@ const SignIn = () => {
           <Text className="text-2xl font-semibold text-white mt-7 font-psemibold">
             Log in to DevHub
           </Text>
+
+          <FormField
+            title='Email'
+            value={form.email}
+            handleChangeText={(e) => setForm({ ...form, email: e})}
+            otherStyles='mt-7'
+            placeholder='Enter your email address'
+          />
+
+          <FormField 
+            title='Password'
+            value={form.password}
+            handleChangeText={(e) => setForm({ ...form, password: e })}
+            otherStyles="mt-7"
+            placeholder='Enter your password'
+          />
 
           <CustomButton
             title='Sign In'
