@@ -4,6 +4,7 @@ import { router, Redirect, Link } from 'expo-router';
 import { View, Text, Image, ScrollView, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { CustomButton } from '@/components';
 import { images } from '@/constants';
 
 const WelCome = () => {
@@ -32,9 +33,10 @@ const WelCome = () => {
           </View>
 
           <Text className='text-sm font-pregular mt-5 text-gray-100 text-center'>
-            Where Creativity Meets Innovation: Embark on a Journey of Limitless
+            Where Creativity Community: Sharing your ideas with developers & contributors
             Exploration with DevHub
           </Text>
+          <CustomButton />
         </View>
       </ScrollView>
       <StatusBar backgroundColor="#161622" style="light" />
