@@ -7,7 +7,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { CustomButton } from '@/components';
 import { images } from '@/constants';
 
-const WelCome = () => {
+const OnBoarding = () => {
+  
   return (
     <SafeAreaView className='bg-primary h-full'>
       <ScrollView 
@@ -35,7 +36,7 @@ const WelCome = () => {
 
           <Text className='text-sm font-pregular mt-5 text-gray-100 text-center'>
             Where Creativity Community: Sharing your ideas with developers & contributors
-            Exploration with DevHub
+            Exploration with DevHub.
           </Text>
           {/*==================== Slider Screen============================= */}
           <CustomButton
@@ -50,4 +51,4 @@ const WelCome = () => {
   )
 }
 
-export default WelCome
+export default OnBoarding;
