@@ -23,7 +23,7 @@
     "concurrently": "^8.2.2",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@aws-sdk/types": "^3.535.0",
