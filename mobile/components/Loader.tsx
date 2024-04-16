@@ -25,7 +25,7 @@ const Loader = ({ isLoading }: Props) => {
         size={osName === "ios" ? "large": 50}
       />
     </View>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;
