@@ -36,7 +36,7 @@ const OnBoarding = () => {
 
           <Text className='text-sm font-pregular mt-5 text-gray-100 text-center'>
             Where Creativity Community: Sharing your ideas with developers & contributors
-            Exploration with DevHub
+            Exploration with DevHub.
           </Text>
           {/*==================== Slider Screen============================= */}
           <CustomButton
