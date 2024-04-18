@@ -3,6 +3,8 @@ import { Link, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, ScrollView, Dimensions, Alert, Image } from 'react-native';
 
+import { signInSchema } from '@/libs/validations/user';
+import { useForm, Controller } from "react-hook-form";
 import { CustomButton, FormField } from '@/components';
 
 const SignIn = () => {
@@ -11,7 +13,7 @@ const SignIn = () => {
   const [form, setForm] = useState({
     email: "",
     password: "",
-  })
+  });
 
   const handleSubmit = async () => {
 
