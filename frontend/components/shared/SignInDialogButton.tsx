@@ -14,7 +14,7 @@ import {
 
 import { CiLogin } from "react-icons/ci";
 
-const SignDialogButton = () => {
+const SignInDialogButton = () => {
   return (
     <div>
       <Dialog>
@@ -53,4 +53,4 @@ const SignDialogButton = () => {
   )
 }
 
-export default SignDialogButton
+export default SignInDialogButton;
