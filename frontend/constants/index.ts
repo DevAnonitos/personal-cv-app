@@ -105,3 +105,9 @@ export const socialLinks = [
     label: "LinkedIn",
   },
 ];
+
+export const linkTags = [
+  {
+    
+  }
+];
