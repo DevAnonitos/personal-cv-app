@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@aws-sdk/types": "^3.535.0",
-    "aws-sdk": "^2.1599.0",
+    "aws-sdk": "^2.1603.0",
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
