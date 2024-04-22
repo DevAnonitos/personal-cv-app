@@ -19,7 +19,7 @@
     "@reduxjs/toolkit": "^2.2.3",
     "expo": "~50.0.14",
     "expo-av": "~13.10.5",
-    "expo-constants": "~15.4.5",
+    "expo-constants": "~15.4.6",
     "expo-device": "~5.9.3",
     "expo-document-picker": "~11.10.1",
     "expo-font": "~11.10.3",
