@@ -3,9 +3,15 @@ import { Link, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, ScrollView, Dimensions, Alert, Image } from 'react-native';
 
+import { yupResolver } from "@hookform/resolvers/yup"
 import { signInValidation } from '@/libs/validations/user';
 import { useForm, Controller } from "react-hook-form";
 import { CustomButton, FormField } from '@/components';
+
+type signInFormData = {
+  email: string;
+  password: string;
+};
 
 const SignIn = () => {
 
@@ -15,8 +21,12 @@ const SignIn = () => {
     password: "",
   });
 
-  const handleSubmit = async () => {
+  const { control, handleSubmit, formState: { errors } } = useForm<signInFormData>({
+    resolver: yupResolver(signInValidation),
+  });
 
+  const onSubmit = async () => {
+    
   };
 
   return (
@@ -53,7 +63,7 @@ const SignIn = () => {
 
           <CustomButton
             title='Sign In'
-            handlePress={handleSubmit}
+            handlePress={onSubmit}
             containerStyle='mt-7 w-full'
             isLoading={isSubmitting}
           />

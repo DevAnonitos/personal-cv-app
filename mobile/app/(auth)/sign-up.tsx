@@ -7,6 +7,12 @@ import { signUpValidation } from '@/libs/validations/user';
 import { useForm, Controller } from "react-hook-form"
 import { CustomButton, FormField } from '@/components';
 
+type signUpData = {
+  username: string;
+  email: string;
+  password: string;
+};
+
 const SignUp = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,8 +22,8 @@ const SignUp = () => {
     password: "",
   });
 
-  const handleSubmit = async () => {
-
+  const onSubmit = async () => {
+    
   };
 
 
@@ -64,7 +70,7 @@ const SignUp = () => {
 
           <CustomButton
             title='Sign Up'
-            handlePress={handleSubmit}
+            handlePress={onSubmit}
             containerStyle='w-full mt-7'
             isLoading={isSubmitting}
           />
