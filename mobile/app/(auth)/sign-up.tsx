@@ -6,12 +6,7 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from 'react-native';
 import { signUpValidation } from '@/libs/validations/user';
 import { useForm, Controller } from "react-hook-form"
 import { CustomButton, FormField } from '@/components';
-
-type signUpData = {
-  username: string;
-  email: string;
-  password: string;
-};
+import { yupResolver } from '@hookform/resolvers/yup';
 
 const SignUp = () => {
 
@@ -22,8 +17,17 @@ const SignUp = () => {
     password: "",
   });
 
+  const { control, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(signUpValidation),
+    defaultValues: {
+      username: "",
+      email: "",
+      password: "",
+    },
+  });
+
   const onSubmit = async () => {
-    
+
   };
 
 

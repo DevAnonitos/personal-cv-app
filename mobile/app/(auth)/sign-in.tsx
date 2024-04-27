@@ -8,11 +8,6 @@ import { signInValidation } from '@/libs/validations/user';
 import { useForm, Controller } from "react-hook-form";
 import { CustomButton, FormField } from '@/components';
 
-type signInFormData = {
-  email: string;
-  password: string;
-};
-
 const SignIn = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -21,8 +16,12 @@ const SignIn = () => {
     password: "",
   });
 
-  const { control, handleSubmit, formState: { errors } } = useForm<signInFormData>({
+  const { control, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(signInValidation),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
   });
 
   const onSubmit = async () => {
