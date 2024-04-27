@@ -3,9 +3,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ThemeProvider from './provider';
 import { Toaster } from '@/components/ui/toaster';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { TopBar, LeftSideBar, BottomBar } from "@/components/shared";
 
-import "../../styles/globals.css"
+import "../../styles/globals.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +42,7 @@ export default function RootLayout({
             </section>
             <Toaster />
           </main>
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
