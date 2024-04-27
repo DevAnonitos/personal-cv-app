@@ -7,7 +7,7 @@ import { socialLinks } from '@/constants';
 const Page = () => {
   return (
     <section className='container_page'>
-      
+      About Page
     </section>
   );
 };
