@@ -1,9 +1,10 @@
-import LeftSideBar from "./LeftSideBar";
+import WebVitals from "./WebVitals";
 import TopBar from "./TopBar";
+import LeftSideBar from "./LeftSideBar";
 import BottomBar from "./BottomBar";
 import SearchBar from "./SearchBar";
 import SwitchThemes from "./SwitchThemes";
-import SignDialogButton from "./SignInDialogButton";
+import SignInDialogButton from "./SignInDialogButton";
 
 export {
   LeftSideBar,
@@ -11,5 +12,6 @@ export {
   BottomBar,
   SearchBar,
   SwitchThemes,
-  SignDialogButton,
+  SignInDialogButton,
+  WebVitals,
 };

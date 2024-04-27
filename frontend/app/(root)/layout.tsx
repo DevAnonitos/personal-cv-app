@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import ThemeProvider from './provider';
 import { Toaster } from '@/components/ui/toaster';
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { TopBar, LeftSideBar, BottomBar } from "@/components/shared";
+import { TopBar, LeftSideBar, BottomBar, WebVitals } from "@/components/shared";
 
 import "../../styles/globals.css";
 
@@ -47,4 +47,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
