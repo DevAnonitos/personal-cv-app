@@ -62,6 +62,7 @@ const SignUp = () => {
             handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles='mt-7'
             placeholder='Enter your email'
+            keyboardType="email-address"
           />
 
           <FormField 

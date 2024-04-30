@@ -6,11 +6,12 @@ import {
   TouchableOpacity, 
   Image,
   ViewStyle, 
+  TextInputProps
 } from 'react-native';
 
 import { icons } from '@/constants';
 
-type FormFieldProps = {
+interface FormFieldProps extends TextInputProps {
   title: string;
   value: string;
   placeholder?: string;
