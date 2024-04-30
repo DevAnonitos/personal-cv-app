@@ -29,7 +29,7 @@
     "expo-sharing": "~11.10.0",
     "expo-splash-screen": "~0.26.4",
     "expo-status-bar": "~1.11.1",
-    "expo-system-ui": "~2.9.3",
+    "expo-system-ui": "~2.9.4",
     "expo-web-browser": "~12.8.2",
     "firebase": "^10.11.0",
     "install": "^0.13.0",
