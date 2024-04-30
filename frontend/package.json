@@ -37,7 +37,7 @@
     "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.0.28",
     "lucide-react": "^0.372.0",
     "moment": "^2.30.1",
