@@ -17,7 +17,12 @@ const SignUp = () => {
     password: "",
   });
 
-  const { control, handleSubmit, formState: { errors } } = useForm({
+  const { 
+    control, 
+    handleSubmit, 
+    formState: { errors }, 
+    getValues 
+  } = useForm({
     resolver: yupResolver(signUpValidation),
     defaultValues: {
       username: "",
@@ -27,7 +32,19 @@ const SignUp = () => {
   });
 
   const onSubmit = async () => {
+    const { username, email, password } = getValues();
 
+    if(username === "" || email === "" || password === "") {
+      Alert.alert("Error", "Please fill in all fields");
+    }
+
+    try {
+      
+    } catch (error) {
+      
+    } finally {
+
+    }
   };
 
 
@@ -75,7 +92,7 @@ const SignUp = () => {
 
           <CustomButton
             title='Sign Up'
-            handlePress={onSubmit}
+            handlePress={handleSubmit(onSubmit)}
             containerStyle='w-full mt-7'
             isLoading={isSubmitting}
           />
