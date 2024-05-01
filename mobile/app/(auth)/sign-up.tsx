@@ -65,30 +65,54 @@ const SignUp = () => {
             Sign Up to DevHub
           </Text>
 
-          <FormField 
-            title='Username'
-            value={form.username}
-            handleChangeText={(e) => setForm({ ...form, username: e })}
-            otherStyles='mt-10'
-            placeholder='Enter your username'
+          <Controller
+            control={control}
+            render={({ field: { value, onChange, onBlur } }) => (
+              <FormField 
+                title='Username'
+                value={value}
+                onBlur={onBlur}
+                handleChangeText={onChange}
+                otherStyles='mt-10'
+                placeholder='Enter your username'
+              />
+            )}
+            name='username'
           />
+          {<Text className='text-red-500 mt-2 w-full'>{errors.username?.message}</Text>}
 
-          <FormField 
-            title='Email'
-            value={form.email}
-            handleChangeText={(e) => setForm({ ...form, email: e })}
-            otherStyles='mt-7'
-            placeholder='Enter your email'
-            keyboardType="email-address"
+          <Controller
+            control={control}
+            render={({ field: { value, onChange, onBlur } }) => (
+              <FormField 
+                title='Email'
+                value={value}
+                onBlur={onBlur}
+                handleChangeText={onChange}
+                otherStyles='mt-7'
+                placeholder='Enter your email'
+                keyboardType="email-address"
+              />
+            )}
+            name='email'
           />
+          {<Text className='text-red-500 mt-2 w-full'>{errors.email?.message}</Text>}
 
-          <FormField 
-            title='Password'
-            value={form.password}
-            handleChangeText={(e) => setForm({ ...form, password: e })}
-            otherStyles='mt-7'
-            placeholder='Enter your password'
+          <Controller
+            control={control}
+            render={({ field: { value, onBlur, onChange } }) => (
+              <FormField 
+                title='Password'
+                value={value}
+                onBlur={onBlur}
+                handleChangeText={onChange}
+                otherStyles='mt-7'
+                placeholder='Enter your password'
+              />
+            )}
+            name='password'
           />
+          {<Text className='text-red-500 mt-2 w-full'>{errors.password?.message}</Text>}
 
           <CustomButton
             title='Sign Up'
