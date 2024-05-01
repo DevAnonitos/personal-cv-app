@@ -12,11 +12,7 @@ import { signInValidation } from '@/libs/validations/user';
 const SignIn = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [form, setForm] = useState({
-    email: "",
-    password: "",
-  });
-
+  
   const { 
     control, 
     handleSubmit, 
@@ -60,23 +56,40 @@ const SignIn = () => {
           <Text className="text-2xl font-semibold text-white mt-7 font-psemibold">
             Log in to DevHub
           </Text>
-
-          <FormField
-            title='Email'
-            value={form.email}
-            handleChangeText={(e) => setForm({ ...form, email: e})}
-            otherStyles='mt-7'
-            placeholder='Enter your email address'
-            keyboardType="email-address"
+          
+          <Controller
+            control={control}
+            render={({ field: { onChange, onBlur, value } }) => (
+              <FormField
+                title='Email'
+                value={value}
+                onBlur={onBlur}
+                handleChangeText={onChange}
+                otherStyles='mt-7'
+                placeholder='Enter your email address'
+                keyboardType="email-address"
+              />
+            )}
+            name='email'
           />
+          {<Text className='text-red-500 mt-2 w-full'>{errors.email?.message}</Text>}
 
-          <FormField 
-            title='Password'
-            value={form.password}
-            handleChangeText={(e) => setForm({ ...form, password: e })}
-            otherStyles="mt-7"
-            placeholder='Enter your password'
+
+          <Controller
+            control={control}
+            render={({ field: { value, onBlur, onChange } }) => (
+              <FormField 
+                title='Password'
+                value={value}
+                onBlur={onBlur}
+                handleChangeText={onChange}
+                otherStyles="mt-7"
+                placeholder='Enter your password'
+              />
+            )}
+            name='password'
           />
+          {<Text className='text-red-500 mt-2 w-full'>{errors.password?.message}</Text>}
 
           <CustomButton
             title='Sign In'
