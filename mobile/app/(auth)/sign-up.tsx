@@ -34,16 +34,18 @@ const SignUp = () => {
   const onSubmit = async () => {
     const { username, email, password } = getValues();
 
+    router.replace("/home");
     if(username === "" || email === "" || password === "") {
       Alert.alert("Error", "Please fill in all fields");
     }
 
+    setIsSubmitting(true);
     try {
-      
-    } catch (error) {
-      
+      router.replace("/home");
+    } catch (error: any) {
+      Alert.alert("Error", error.message);
     } finally {
-
+      setIsSubmitting(false);
     }
   };
 
