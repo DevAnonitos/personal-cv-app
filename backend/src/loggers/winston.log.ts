@@ -1,6 +1,9 @@
 import winston from "winston";
+import path from "path";
 
 const { combine, timestamp, json } = winston.format;
+// Config Path Log
+const logsDir = path.join(__dirname, '..', 'logs');
 
 const logger = winston.createLogger({
   level: process.env.LOG_LEVEL || 'debug',
@@ -8,7 +11,7 @@ const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({
-      dirname: 'logs', filename: 'test.log',
+      dirname: logsDir, filename: 'test.log',
     }),
   ],
 });
