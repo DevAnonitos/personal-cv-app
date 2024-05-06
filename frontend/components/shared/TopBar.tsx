@@ -28,7 +28,7 @@ const TopBar = () => {
         </div>
 
         <div className='flex items-center justify-center'>
-          {/* <SwitchThemes /> */}
+          <SwitchThemes />
           <SignInDialogButton />
         </div>
       </div>
