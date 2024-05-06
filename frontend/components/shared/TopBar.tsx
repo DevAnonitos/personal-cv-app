@@ -27,7 +27,7 @@ const TopBar = () => {
           <SearchBar />
         </div>
 
-        <div>
+        <div className='flex items-center justify-center'>
           {/* <SwitchThemes /> */}
           <SignInDialogButton />
         </div>
