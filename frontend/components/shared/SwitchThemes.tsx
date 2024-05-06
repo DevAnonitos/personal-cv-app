@@ -21,7 +21,6 @@ const SwitchThemes = () => {
     <div>
       <button onClick={toggleTheme}>
         {theme === "light" ? <FiMoon /> : <FiSun />}
-        {theme === "light" ? "Dark": "Light"} Mode
       </button>
     </div>
   );
