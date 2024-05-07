@@ -18,7 +18,7 @@ const SwitchThemes = () => {
   []);
 
   return (
-    <div>
+    <div className='flex items-center justify-center p-4'>
       <button onClick={toggleTheme}>
         {theme === "light" ? <FiMoon /> : <FiSun />}
       </button>
