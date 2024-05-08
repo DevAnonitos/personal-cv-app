@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { FiSun, FiMoon } from "react-icons/fi"
+import {  SunIcon, MoonIcon  } from "@radix-ui/react-icons";
+
 
 const SwitchThemes = () => {
 
@@ -20,7 +21,7 @@ const SwitchThemes = () => {
   return (
     <div className='flex items-center justify-center p-4'>
       <button onClick={toggleTheme}>
-        {theme === "light" ? <FiMoon /> : <FiSun />}
+        {theme === "light" ? <MoonIcon /> : <SunIcon />}
       </button>
     </div>
   );
