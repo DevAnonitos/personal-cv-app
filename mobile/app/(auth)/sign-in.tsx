@@ -35,8 +35,6 @@ const SignIn = () => {
 
     try {
       const { email, password } = getValues();
-
-      
       router.replace("/home");
     } catch (error) {
       
