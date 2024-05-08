@@ -15,11 +15,13 @@
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
     "@hookform/resolvers": "^3.3.4",
+    "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-navigation/native": "^6.0.2",
     "@reduxjs/toolkit": "^2.2.3",
     "expo": "~50.0.17",
     "expo-av": "~13.10.6",
     "expo-constants": "~15.4.6",
+    "expo-crypto": "~12.8.1",
     "expo-device": "~5.9.4",
     "expo-document-picker": "~11.10.1",
     "expo-font": "~11.10.3",
@@ -33,6 +35,8 @@
     "expo-web-browser": "~12.8.2",
     "firebase": "^10.11.0",
     "install": "^0.13.0",
+    "jest": "^29.3.1",
+    "jest-expo": "~50.0.4",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -46,10 +50,7 @@
     "react-native-url-polyfill": "^2.0.0",
     "react-native-web": "~0.19.11",
     "react-redux": "^9.1.1",
-    "yup": "^1.4.0",
-    "jest-expo": "~50.0.4",
-    "jest": "^29.3.1",
-    "expo-crypto": "~12.8.1"
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
