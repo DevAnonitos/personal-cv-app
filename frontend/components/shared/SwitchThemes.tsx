@@ -21,7 +21,11 @@ const SwitchThemes = () => {
   return (
     <div className='flex items-center justify-center p-4'>
       <button onClick={toggleTheme}>
-        {theme === "light" ? <MoonIcon /> : <SunIcon />}
+        {theme === "light" ? 
+          <MoonIcon height={20} width={20} /> 
+          : 
+          <SunIcon height={20} width={20} />
+        }
       </button>
     </div>
   );
