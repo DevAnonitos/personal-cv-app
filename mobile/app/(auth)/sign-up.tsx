@@ -8,6 +8,8 @@ import { CustomButton, FormField } from '@/components';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { signUpValidation } from '@/libs/validations/user';
 
+import { firebaseAuth } from '@/libs/firebase/firebaseConfig';
+
 const SignUp = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -91,7 +93,7 @@ const SignUp = () => {
                 value={value}
                 onBlur={onBlur}
                 handleChangeText={onChange}
-                otherStyles='mt-7'
+                otherStyles='mt-3'
                 placeholder='Enter your email'
                 keyboardType="email-address"
               />
@@ -108,7 +110,7 @@ const SignUp = () => {
                 value={value}
                 onBlur={onBlur}
                 handleChangeText={onChange}
-                otherStyles='mt-7'
+                otherStyles='mt-3'
                 placeholder='Enter your password'
               />
             )}
@@ -119,7 +121,7 @@ const SignUp = () => {
           <CustomButton
             title='Sign Up'
             handlePress={handleSubmit(onSubmit)}
-            containerStyle='w-full mt-7'
+            containerStyle='w-full mt-3'
             isLoading={isSubmitting}
           />
 

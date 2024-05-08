@@ -9,10 +9,12 @@ import { CustomButton, FormField } from '@/components';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signInValidation } from '@/libs/validations/user';
 
+import { firebaseAuth } from '@/libs/firebase/firebaseConfig';
+
 const SignIn = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const { 
     control, 
     handleSubmit, 
@@ -31,6 +33,7 @@ const SignIn = () => {
 
     try {
       const { email, password } = getValues();
+
       
       router.replace("/home");
     } catch (error) {
@@ -64,7 +67,7 @@ const SignIn = () => {
                 value={value}
                 onBlur={onBlur}
                 handleChangeText={onChange}
-                otherStyles='mt-7'
+                otherStyles='mt-3'
                 placeholder='Enter your email address'
                 keyboardType="email-address"
               />
@@ -82,7 +85,7 @@ const SignIn = () => {
                 value={value}
                 onBlur={onBlur}
                 handleChangeText={onChange}
-                otherStyles="mt-7"
+                otherStyles="mt-3"
                 placeholder='Enter your password'
               />
             )}
