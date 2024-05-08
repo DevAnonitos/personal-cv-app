@@ -15,7 +15,7 @@ const SignIn = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // const auth = firebaseAuth;
+  const auth = firebaseAuth; 
 
   const { 
     control, 
