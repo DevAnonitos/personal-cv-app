@@ -11,6 +11,7 @@ import { signInValidation } from '@/libs/validations/user';
 
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { firebaseAuth } from '@/libs/firebase/firebaseConfig';
+import { getAuth } from 'firebase/auth';
 
 const SignIn = () => {
 
@@ -34,8 +35,10 @@ const SignIn = () => {
 
     try {
       const { email, password } = getValues();
+      
     } catch (error) {
         Alert.alert('Đăng nhập không thành công');
+        console.log(error);
     } finally {
       setIsSubmitting(false);
     }
