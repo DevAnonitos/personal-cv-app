@@ -1,7 +1,15 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-const GlobalContext = createContext<null>(null);
+type GlobalContextProps = {
+  isLogged?: boolean;
+}
+
+
+const GlobalContext = createContext<GlobalContextProps | null>(null);
 export const useGlobalContext = () => useContext(GlobalContext);
 
+const GlobalProvider = ({}) => {
+
+};
 
 

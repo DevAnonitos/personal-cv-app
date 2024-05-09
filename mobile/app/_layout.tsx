@@ -34,8 +34,6 @@ const RootLayout = () => {
     return null;
   }
 
-  
-
   return (
     <>
       <Stack>
