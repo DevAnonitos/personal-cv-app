@@ -35,7 +35,7 @@ const SignIn = () => {
 
     try {
       const { email, password } = getValues();
-      
+
     } catch (error) {
         Alert.alert('Đăng nhập không thành công');
         console.log(error);
