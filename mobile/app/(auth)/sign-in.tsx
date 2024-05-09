@@ -9,13 +9,12 @@ import { CustomButton, FormField } from '@/components';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signInValidation } from '@/libs/validations/user';
 
+import { signInWithEmailAndPassword } from "firebase/auth"
 import { firebaseAuth } from '@/libs/firebase/firebaseConfig';
 
 const SignIn = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const auth = firebaseAuth; 
 
   const { 
     control, 
@@ -35,9 +34,8 @@ const SignIn = () => {
 
     try {
       const { email, password } = getValues();
-      router.replace("/home");
     } catch (error) {
-      
+        Alert.alert('Đăng nhập không thành công');
     } finally {
       setIsSubmitting(false);
     }
