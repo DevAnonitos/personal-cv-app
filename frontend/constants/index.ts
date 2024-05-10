@@ -108,6 +108,60 @@ export const socialLinks = [
 
 export const linkTags = [
   {
-    
-  }
+    text: "All",
+  },
+  {
+    text: "Next.js",
+  },
+  {
+    text: "React.js",
+  },
+  {
+    text: "Javascript",
+  },
+  {
+    text: "TypeScript",
+  },
+  {
+    text: "Node.js",
+  },
+  {
+    text: "MongoDB",
+  },
+  {
+    text: "Nest.js",
+  },
+  {
+    text: "Next Auth",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
+  {
+    text: "Firebase",
+  },
 ];
