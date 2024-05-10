@@ -12,7 +12,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-
 export default function Home() {
   return (
     <section className="container_page">
@@ -296,6 +295,7 @@ export default function Home() {
           
         </div>
       </div>
+      
     </section>
   );
 };
