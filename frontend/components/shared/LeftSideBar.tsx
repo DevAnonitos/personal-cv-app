@@ -12,7 +12,7 @@ const LeftSideBar = () => {
   const pathName = usePathname();
 
   return (
-    <div className='leftSideBar custom-scrollbar dark:bg-black'>
+    <div className='leftSideBar custom-scrollbar dark:bg-[#131c2f] dark:border-gray-700'>
       <div className='flex flex-col flex-1 gap-6 w-full p-3'>
         {leftSideBarLinks.map((link) => { 
           const isActive =

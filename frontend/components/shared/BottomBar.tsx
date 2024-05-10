@@ -5,7 +5,7 @@ import { socialMediaLinks, linkReferences } from '@/constants';
 
 const BottomBar = () => {
   return (
-    <div className='bottomBar dark:bg-black'>
+    <div className='bottomBar dark:bg-[#131c2f] dark:border-gray-700'>
       <div className='flex justify-between w-full max-md:flex-col'>
         {/* Des Creator */}
         <div className='flex flex-col'>
