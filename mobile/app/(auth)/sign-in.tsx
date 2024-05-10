@@ -34,7 +34,7 @@ const SignIn = () => {
     setIsSubmitting(true);
 
     try {
-      const { email, password } = getValues();
+      const { email, password } =  getValues();
 
     } catch (error) {
         Alert.alert('Đăng nhập không thành công');
