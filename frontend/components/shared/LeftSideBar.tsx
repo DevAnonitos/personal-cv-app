@@ -23,7 +23,10 @@ const LeftSideBar = () => {
             <Link 
               key={link.label} 
               href={link.route} 
-              className={`leftsidebar_link ${isActive && 'bg-slate-100'} hover:bg-slate-100`}
+              className={`leftsidebar_link 
+                ${isActive && 'bg-slate-100'} hover:bg-slate-100 
+                transition-colors duration-200`
+              }
             >
               <Image 
                 src={link.imgUrl}
