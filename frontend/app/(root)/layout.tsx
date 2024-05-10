@@ -33,7 +33,7 @@ export default function RootLayout({
           <TopBar />
           <main className="flex flex-col h-full">
             <LeftSideBar />
-            <section className="main-container dark:bg-[#131c2f]">
+            <section className="main-container dark:bg-[#161622]">
               <div className="main-container_content">
                 {children}
               </div>

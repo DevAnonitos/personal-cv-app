@@ -23,7 +23,7 @@ const SignInDialogButton = () => {
             <CiLogin size={20} className='mr-2' /> Log In
           </Button>
         </DialogTrigger>
-        <DialogContent className="sign-in_dialog dark:bg-[#131c2f]">
+        <DialogContent className="sign-in_dialog dark:bg-[#161622]">
           <DialogHeader>
             <DialogTitle className='text-2xl'>Sign in</DialogTitle>
             <DialogDescription>
