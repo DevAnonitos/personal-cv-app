@@ -19,11 +19,11 @@ const SignInDialogButton = () => {
     <div>
       <Dialog>
         <DialogTrigger asChild>
-          <Button variant="outline" className='flex items-center justify-center font-semibold'>
-            <CiLogin size={20} className='mr-2' /> LogIn
+          <Button variant="outline" className='flex items-center justify-center font-semibold dark:bg-[#FF8E01]'>
+            <CiLogin size={20} className='mr-2' /> Log In
           </Button>
         </DialogTrigger>
-        <DialogContent className="sign-in_dialog">
+        <DialogContent className="sign-in_dialog dark:bg-[#131c2f]">
           <DialogHeader>
             <DialogTitle className='text-2xl'>Sign in</DialogTitle>
             <DialogDescription>

@@ -13,7 +13,7 @@ const LeftSideBar = () => {
 
   return (
     <div className='leftSideBar custom-scrollbar dark:bg-[#131c2f] dark:border-gray-700'>
-      <div className='flex flex-col flex-1 gap-6 w-full p-3'>
+      <div className='flex flex-col flex-1 gap-6 w-full p-4'>
         {leftSideBarLinks.map((link) => { 
           const isActive =
           (pathName.includes(link.route) && link.route.length > 1)

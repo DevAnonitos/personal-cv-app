@@ -13,7 +13,7 @@ const SearchBar = () => {
         type='search' 
         placeholder='Search for content...' 
       />
-      <Button className='rounded-lg rounded-l-none h-10' type='submit'>
+      <Button className='rounded-lg rounded-l-none h-10 dark:bg-[#FF8E01] dark:text-white' type='submit'>
         Search
       </Button>
     </div>

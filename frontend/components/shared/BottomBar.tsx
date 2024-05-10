@@ -9,23 +9,23 @@ const BottomBar = () => {
       <div className='flex justify-between w-full max-md:flex-col'>
         {/* Des Creator */}
         <div className='flex flex-col'>
-          <h1 className='text-md font-medium text-slate-600'>
+          <h1 className='text-md font-medium text-slate-600 dark:text-white'>
             Designed and developed by:  
             <a 
               href="https://www.facebook.com/baonguyenno1412/" 
-              className='font-bold text-md text-black tracking-wide'
+              className='font-bold text-md text-black tracking-wide dark:text-[#FF9001]'
             >
               DevAnonitos
             </a>
           </h1>
-          <p className='text-sm font-normal text-slate-600'>
+          <p className='text-sm font-normal text-slate-600 dark:text-slate-300'>
           All rights reserved. Copyright &copy;2024 - v1.0
           </p>
         </div>
         {/* Link Reference */}
         <div className='flex items-center justify-center max-md:mt-2'>
           {linkReferences.map((link) => (
-            <div key={link.label} className='mx-2 text-md font-normal text-slate-600 hover:underline cursor-pointer max-md:text-sm'>
+            <div key={link.label} className='mx-2 text-md font-normal text-slate-600 hover:underline cursor-pointer max-md:text-sm dark:text-white'>
               {link.label}
             </div>
           ))}
@@ -33,7 +33,7 @@ const BottomBar = () => {
         {/* Link social Media */}
         <div className='flex flex-row items-center justify-center max-md:hidden'>
           {socialMediaLinks.map((socialLink) => (
-            <Button variant="secondary" key={socialLink.label} className='button_social'>
+            <Button variant="secondary" key={socialLink.label} className='button_social dark:bg-white'>
               <a href={socialLink.linkUrl} target='_blank'>
                 <Image
                   src={socialLink.imgUrl}
