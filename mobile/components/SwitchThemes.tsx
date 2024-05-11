@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Ionicons } from "@expo/vector-icons";
+import { TouchableOpacity } from "react-native";
 
 const SwitchThemes = () => {
   return (
-    <div>SwitchThemes</div>
+    <TouchableOpacity>
+      <Ionicons name="sunny" size={24} color="white" />
+    </TouchableOpacity>
   );
 };
 
