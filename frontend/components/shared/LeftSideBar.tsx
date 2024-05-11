@@ -24,7 +24,7 @@ const LeftSideBar = () => {
               key={link.label} 
               href={link.route} 
               className={`leftsidebar_link 
-                ${isActive && 'bg-slate-100'} hover:bg-slate-100 
+                ${isActive && 'bg-slate-100 dark:bg-[#FF9C01]'} hover:bg-slate-100 hover:dark:bg-[#FF9C01]
                 transition-colors duration-200`
               }
             >
@@ -35,7 +35,7 @@ const LeftSideBar = () => {
                 height={38}
                 className='object-contain rounded-full bg-gray-200 p-2'
               />
-              <p className={`text-md font-normal ${isActive ? "text-black font-semibold" : "text-slate-600"}`}>
+              <p className={`text-md dark:text-white font-normal ${isActive ? "text-black font-semibold" : "text-slate-600"}`}>
                 {link.label}
               </p>
             </Link>

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import SearchBar from './SearchBar';
 import SwitchThemes from './SwitchThemes';
 import SignInDialogButton from './SignInDialogButton';
+import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 
 const TopBar = () => {
   return (
@@ -17,11 +18,11 @@ const TopBar = () => {
             alt='logo'
             width={40}
             height={40}
-            className='object-contain rounded-full'
+            className='object-contain rounded-full max-md:hidden'
           />
           <p className='logo_text dark:text-[#FF8E01]'>DevAnonitos</p>
-
         </Link>
+        {/* <HamburgerMenuIcon width={20} height={20} /> */}
 
         <div className='flex items-center justify-center'>
           <SearchBar />
