@@ -4,6 +4,7 @@ import LeftSideBar from "./LeftSideBar";
 import BottomBar from "./BottomBar";
 import SearchBar from "./SearchBar";
 import SwitchThemes from "./SwitchThemes";
+import TagButton from "./TagButton";
 import SignInDialogButton from "./SignInDialogButton";
 
 export {
@@ -14,4 +15,5 @@ export {
   SwitchThemes,
   SignInDialogButton,
   WebVitals,
+  TagButton,
 };
