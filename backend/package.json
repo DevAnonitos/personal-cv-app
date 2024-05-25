@@ -28,8 +28,13 @@
   },
   "dependencies": {
     "@aws-sdk/types": "^3.577.0",
+<<<<<<< dependabot/npm_and_yarn/backend/aws-sdk-2.1627.0
+    "aws-sdk": "^2.1627.0",
+    "axios": "^1.6.8",
+=======
     "aws-sdk": "^2.1608.0",
     "axios": "^1.7.1",
+>>>>>>> main
     "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
     "express": "^4.19.2",
