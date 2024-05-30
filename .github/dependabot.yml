@@ -16,3 +16,8 @@ updates:
     directory: "mobile"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "portfolio"
+    schedule:
+      interval: "weekly"
